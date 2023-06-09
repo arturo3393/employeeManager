@@ -12,4 +12,8 @@ public interface EmployeService {
     Optional<Employee> findEmployeeById(Long employeeId);
 
     ResponseDTO<Employee> addEmployee(Employee employee);
+
+    ResponseDTO<Employee> updateEmployee(Employee employee);
+
+    ResponseDTO<Void>  deleteEmployee(Long employeeId);
 }
